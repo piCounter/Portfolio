@@ -5,6 +5,41 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Zoom2p2",
+            "request": "launch",
+            "mainClass": "Zoom2p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom2_1",
+            "request": "launch",
+            "mainClass": "Zoom2_1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom2_2",
+            "request": "launch",
+            "mainClass": "Zoom2_2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Welcome",
+            "request": "launch",
+            "mainClass": "Welcome",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom2",
+            "request": "launch",
+            "mainClass": "Zoom2",
+            "projectName": "CSC111"
+        },
+        {
             "name": "g++ - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
