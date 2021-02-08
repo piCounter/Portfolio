@@ -20,16 +20,22 @@ int main() {
     int divide = 10000;
     int increment = userNum/divide;
 
-    if (userNum > 0) {
-        for (userNum; userNum > 0; userNum--) {
-            if (userNum % divide == 0) {
+    if (userNum > 0) 
+    {
+        for (userNum; userNum > 0; userNum--) 
+        {
+            if (userNum % divide == 0) 
+            {
                 cout << --increment << endl;
             }
         }
     }
-    else {
-        for (userNum; userNum < 0; userNum++) {
-            if (userNum % divide == 0) {
+    else 
+    {
+        for (userNum; userNum < 0; userNum++) 
+        {
+            if (userNum % divide == 0) 
+            {
                 cout << --increment << endl;
             }
         }
