@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Homework3p2",
+            "request": "launch",
+            "mainClass": "Homework3p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework3p1",
+            "request": "launch",
+            "mainClass": "Homework3p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom4p1",
+            "request": "launch",
+            "mainClass": "Zoom4p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
             "name": "Launch Homework2p2",
             "request": "launch",
             "mainClass": "Homework2p2",

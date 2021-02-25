@@ -26,6 +26,6 @@ int main()
 				cin >> area;
 				cout << endl;
 				cout << "The cost of the fertilizer per pound is: $" << cost / bagSize << endl; // logic error here
-				cout << "The cost of fertilizing per square foot is: $" << cost / area << endl; // logic error here
+				cout << "The cost of fertilizing per square foot is: $" << cost / area << endl << endl; // logic error here
 			 return 0;
 }
