@@ -5,38 +5,38 @@
  */
 
 import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
 
 
 public class Homework3p2 {
     public static void main(String[] args) {
 
         // variable declaration
+        double air = 1100.0, water = 4900.0, steel = 16400.0, distance = -1, time;
+        int index = -1;
+        
+        // UI option button popup
         Object[] options = {"Air", "Water", "Steel"};
-        int air = 1100.0, water = 4900.0, steel = 16400.0
-        String distanceString;
-        double distance == -1, time;
+        while (index < 0) {
+            index = JOptionPane.showOptionDialog(null, "Select the medium measured: ", "Sound mediums",JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options[0]);
+        }
 
         // UI input
         while (distance < 0) {
-            int x = JOptionPane.showOptionDialog(null, "Select the medium measured: ", "Sound mediums",JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options[0]);
-            System.out.println("Your choice was " + options[x]);
-            distanceString = JOptionPane.showInputDialog(null, "Enter the distance measured: ");
+            String distanceString = JOptionPane.showInputDialog(null, "Enter the distance measured: ");
+            distance = Double.parseDouble(distanceString);
         }
 
-        // chance type
-        distance = Double.parseFloat(distanceString);
-
-        // computations
-        if (x == options[0]) {
-            time = distance / air;
-        else if (x == options[1])
-            time = distance / water;
-        else if (x == options[2])
-            time = distance / steel;
+        // computations and output
+        switch (index) {
+            case 0:
+                JOptionPane.showMessageDialog(null, "Time: " + distance / air);
+            case 1:
+                JOptionPane.showMessageDialog(null, "Time: " + distance / water);
+            case 2:
+                JOptionPane.showMessageDialog(null, "Time: " + distance / steel);
+        }
         
-        // output
-        
-
     }
     
 }
