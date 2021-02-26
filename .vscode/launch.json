@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Review2",
+            "request": "launch",
+            "mainClass": "Review2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch video3",
+            "request": "launch",
+            "mainClass": "video3",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
             "name": "Launch Zoom2p1",
             "request": "launch",
             "mainClass": "Zoom2p1",

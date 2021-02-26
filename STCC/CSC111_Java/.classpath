@@ -6,5 +6,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="P_Videos/src"/>
+	<classpathentry kind="src" path="P_Practice/src"/>
+	<classpathentry kind="src" path="P_Homework/src"/>
+	<classpathentry kind="src" path="P_Zoom_Lectures/src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

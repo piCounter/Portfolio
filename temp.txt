@@ -1,0 +1,20 @@
+execute @e[type=!player] ~~~ tp ~~~
+    repeat
+    unconditional
+    needs redstone
+        lever
+
+execute @e[type=!player] ~~~ fill ~ ~-1 ~ ~ ~-1 ~ redstone_block 0 replace grass
+    repeat
+    unconditional
+    needs redstone
+        lever
+\/
+kill @e
+    chain
+    conditional
+    always active
+
+-50 x -50 50 x 50
+
+/fill -50 x -50 50 x 50 air 0 replace grass

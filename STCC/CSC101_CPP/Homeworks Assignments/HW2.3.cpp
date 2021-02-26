@@ -20,16 +20,18 @@ int main() {
     // input
     cout << "Input the radius of the cylinder's base: ";
     cin >> cRadius;
-    cout << endl << "Input the height of the cylinder: ";
+    cout << "Input the height of the cylinder: ";
     cin >> cHeight;
 
     // computations
-    double side = cbrt(PI * (pow(cRadius, 2)) * cHeight);
+    double volume = PI * (pow(cRadius, 2)) * cHeight;
+    double side = pow(volume, 1/3.0); // gets volume o f cylinder then calculates sides
 
     // set precision
     cout << fixed << showpoint << setprecision(2);
 
     // output
+    cout << "Volume: " << volume << endl;
     cout << "The cude sides are a length of " << side << " x " << side << " x " << side << endl << endl;
 
     return 0;
