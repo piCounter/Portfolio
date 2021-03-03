@@ -44,4 +44,6 @@ int main() {
         case 70:
             cout << "Senior";
             break;
+        
+        char apple = 'a';
 }

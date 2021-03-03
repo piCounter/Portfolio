@@ -30,7 +30,7 @@ int main () {
     outputFile.open("Ch3_Ex5Output.dat");
 
     // set answers to two decimal places
-    cout << fixed << showpoint << setprecision(2);
+    outputFile << fixed << showpoint << setprecision(2);
 
     // read files into variables
     readFile >> firstName >> lastName >> updatedSalary >> temp;
