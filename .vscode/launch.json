@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Hw4p2",
+            "request": "launch",
+            "mainClass": "Hw4p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch incompleteHomework4p2",
+            "request": "launch",
+            "mainClass": "incompleteHomework4p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom6p1",
+            "request": "launch",
+            "mainClass": "Zoom6p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework4p2",
+            "request": "launch",
+            "mainClass": "Homework4p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework4p1",
+            "request": "launch",
+            "mainClass": "Homework4p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
             "name": "Launch Review2",
             "request": "launch",
             "mainClass": "Review2",

@@ -48,7 +48,7 @@ import java.util.Scanner;
         //     // no triangle
         //     System.out.println("You don't have a triangle");
 
-
+        input.close();
 
     }
 }

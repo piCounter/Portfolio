@@ -6,7 +6,7 @@
 
  import java.util.Scanner;
 
- public class Homework2p2 {
+ public class Hw2p2 {
      public static void main(String[] args) {
         // open scanner
         Scanner input = new Scanner(System.in);

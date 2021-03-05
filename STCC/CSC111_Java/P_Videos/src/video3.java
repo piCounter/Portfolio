@@ -20,5 +20,7 @@ public class video3 {
         double sum = length + width + height;
         System.out.println("The sum of the 3 numbers is " + sum);
         System.out.println("Thank you " + name + "!");
+
+        input.close();
     }
 }

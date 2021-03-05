@@ -44,5 +44,7 @@ public class Zoom5p2 {
 
         System.out.println("Thank you for verifying your BMI");
 
+        input.close();
+
     }
 }

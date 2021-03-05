@@ -1,7 +1,7 @@
 /* Written by Michael Buckley for CSC111 at STCC.
 This code is in response to Homework assignment 1. */
 
-public class Homework1 
+public class Hw1 
 {
 	public static void main(String[] args)
 	{

@@ -24,5 +24,7 @@ public class Zoom5p3 {
         // display
         System.out.println(year + " is a leap year? " + leap);
 
+        input.close();
+
     }
 }

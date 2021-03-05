@@ -36,5 +36,7 @@ public class Zoom5p1 {
     else
         System.out.println("wrong");
 
+    input.close();
+
    }
 }

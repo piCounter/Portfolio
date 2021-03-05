@@ -7,7 +7,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Homework3p1 {
+public class Hw3p1 {
     public static void main(String[] args) {
 
         // create scanner
@@ -43,5 +43,7 @@ public class Homework3p1 {
         System.out.println("____________");
         System.out.println("Total: $" + df.format(price) + " for " + quantity + " licenses.");
         System.out.println();
+
+        input.close();
         }
     }

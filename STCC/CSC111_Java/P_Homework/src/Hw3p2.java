@@ -5,14 +5,13 @@
  */
 
 import javax.swing.JOptionPane;
-import java.text.DecimalFormat;
 
 
-public class Homework3p2 {
+public class Hw3p2 {
     public static void main(String[] args) {
 
         // variable declaration
-        double air = 1100.0, water = 4900.0, steel = 16400.0, distance = -1, time;
+        double air = 1100.0, water = 4900.0, steel = 16400.0, distance = -1;
         int index = -1;
         
         // UI option button popup
