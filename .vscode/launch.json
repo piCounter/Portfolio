@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Review3_format",
+            "request": "launch",
+            "mainClass": "Review3_format",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review3",
+            "request": "launch",
+            "mainClass": "Review3",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
             "name": "Launch Hw4p2",
             "request": "launch",
             "mainClass": "Hw4p2",
