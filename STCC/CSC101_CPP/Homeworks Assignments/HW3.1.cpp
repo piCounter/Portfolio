@@ -9,10 +9,11 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
 
     // variable decliration
-    int num1, num2, num3, first, second, third;
+    double num1, num2, num3, first, second, third;
     string answer;
 
     // user input
@@ -24,44 +25,75 @@ int main() {
     cin >> num3;
 
     // reorder numbers
-    if ((num1 <= num2) && (num1 <= num3)) {
+    if ((num1 <= num2) && (num1 <= num3))
+    {
         first = num1;
-        if (num2 <= num3) {
+        if (num2 <= num3)
+        {
             second = num2;
             third = num3;
         }
-        else {
-            second = num3;
-            third = num2;
-        }
-    }
-        else if ((num2 <= num3) && (num2 <= num1)) {
-        first = num2;
-        if (num3 <= num1) {
-            second = num3;
-            third = num1;
-        }
-        else {
-            second = num1;
-            third = num3;
-        }
-    }
-        else if ((num3 <= num1) && (num3 <= num2)) {
-        first = num3;
-        if (num1 <= num2) {
-            second = num1;
-            third = num2;
-        }
-        else {
-            second = num2;
-            third = num1;
-        }
-    }
         else
-            cout << "All numbers entered are equal" << endl;
+        {
+            second = num3;
+            third = num2;
+        }
+    }
+    else if ((num2 <= num3) && (num2 <= num1))
+    {
+        first = num2;
+        if (num3 <= num1)
+        {
+            second = num3;
+            third = num1;
+        }
+        else
+        {
+            second = num1;
+            third = num3;
+        }
+    }
+    else if ((num3 <= num1) && (num3 <= num2))
+    {
+        first = num3;
+        if (num1 <= num2)
+        {
+            second = num1;
+            third = num2;
+        }
+        else
+        {
+            second = num2;
+            third = num1;
+        }
+    }
+    else
+        cout << "All numbers entered are equal" << endl;
 
     // output
-    
+
     cout << first << " " << second << " " << third << endl;
 
+    /**
+    //shortened bruitforce without reassignment
+    if (num3 >= num1 && num3 >= num2 && num1 < num2)
+        cout << num1 << " " << num2 << " " << num3;
+    //132
+    else if (num2 >= num1 && num2 >= num2 && num1 < num2)
+        cout << num1 << " " << num3 << " " << num2;
+    //213
+    else if (num3 >= num1 && num2 >= num2 && num2 < num1)
+        cout << num2 << " " << num1 << " " << num3;
+    //231
+    else if (num1 >= num2 && num1 >= num3 && num2 < num3)
+        cout << num2 << " " << num3 << " " << num1;
+    //312
+    else if (num2 >= num1 && num2 >= num3 && num3 < num1)
+        cout << num3 << " " << num1 << " " << num2;
+    //321
+    else if (num1 >= num2 && num1 >= num3 && num3 < num2)
+        cout << num3 << " " << num2 << " " << num1;
+    else
+        cout << num1 << " " << num2 << " " << num3; 
+*/
 }

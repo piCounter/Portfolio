@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Hw5p1",
+            "request": "launch",
+            "mainClass": "Hw5p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hw5p2",
+            "request": "launch",
+            "mainClass": "Hw5p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review4_formatting",
+            "request": "launch",
+            "mainClass": "Review4_formatting",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review4",
+            "request": "launch",
+            "mainClass": "Review4",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom7p1",
+            "request": "launch",
+            "mainClass": "Zoom7p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
             "name": "Launch Review3_format",
             "request": "launch",
             "mainClass": "Review3_format",
