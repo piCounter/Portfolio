@@ -25,19 +25,20 @@ public class Hw5p1 {
             sumX += temp; // sum of all values
             sumXsq += Math.pow(temp, 2); // sum of the square of each value
         }
-
+        
         // calculate mean
         mean = sumX / n;
+        
 
         // calculate deviation
         deviation = Math.sqrt(
-            (n * Math.pow(sumXsq, 2) - Math.pow(sumX, 2))
-             / 
-             n * (n-1)
-            );
+            (n * (sumXsq) - (Math.pow(sumX, 2))) / (n * (n - 1)));
 
         // output
-        System.out.println(mean);
-        System.out.println(deviation);
+        System.out.println("The mean is " + mean);
+        System.out.printf("The standard deviation is %.5f", deviation);
+        System.out.println();
+
+        input.close();
     }
 }
