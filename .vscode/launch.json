@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PRACTICE",
+            "request": "launch",
+            "mainClass": "PRACTICE",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
             "name": "Launch Hw5p1",
             "request": "launch",
             "mainClass": "Hw5p1",
