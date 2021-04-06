@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="P_Practice/src"/>
 	<classpathentry kind="src" path="P_Homework/src"/>
 	<classpathentry kind="src" path="P_Zoom_Lectures/src"/>
+	<classpathentry excluding="src/" kind="src" path="P_Practice"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
