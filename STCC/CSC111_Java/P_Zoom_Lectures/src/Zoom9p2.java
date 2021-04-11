@@ -31,7 +31,7 @@ public class Zoom9p2 {
         
     }
 
-    private static int [] Adjust(int [] list) {
+    private static int[] Adjust(int [] list) {
         for (int c=0; c < list.length; c++)
             list[c] += 5;
     }
@@ -50,5 +50,4 @@ public class Zoom9p2 {
             System.out.println(x[i]);
         }
     }
-    
 }
