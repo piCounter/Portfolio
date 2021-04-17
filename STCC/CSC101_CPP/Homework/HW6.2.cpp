@@ -10,12 +10,15 @@
 using namespace std;
 
 int main() {
+    // define variables
     int total = 0;
     string user;
 
+    // get user input
     cout << "Enter a string: ";
     getline(cin, user);
 
+    // add each chars ASCII value from string
     for (int i = 0; i < user.length(); i++) {
         total += user[i];
     }

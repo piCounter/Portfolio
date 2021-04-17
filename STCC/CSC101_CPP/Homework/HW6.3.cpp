@@ -57,7 +57,6 @@ void menu() {
     }
 
     // user enters all their fractions
-
     while (true) {
         cout << "Enter the numberator and denominator of fraction " << 1 << " you would like to " << symbol << ", separatorated by a space: ";
         cin >> n1 >> d1;
