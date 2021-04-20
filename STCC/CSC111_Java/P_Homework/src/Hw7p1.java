@@ -43,6 +43,8 @@ public class Hw7p1 {
                     System.out.printf("%d ", lottery[i]);
                 }
             }
+            
+            // output
             if (matches == 5)
                 System.out.println("\n ~ PERFECT MATCH in " + attempts + " attempts.\n");
         } 
@@ -50,8 +52,6 @@ public class Hw7p1 {
 
     private static void draw(int[] lot) {
         for (int i=0; i < lot.length; i++) 
-            lot[i] = (int)(Math.random() * 69);
+            lot[i] = (int)(Math.random() * 10);
     }
-
-    
 }

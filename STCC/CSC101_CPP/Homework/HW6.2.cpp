@@ -21,6 +21,11 @@ int main() {
     // add each chars ASCII value from string
     for (int i = 0; i < user.length(); i++) {
         total += user[i];
+        cout << (int)(user[i]) << " ";
+        if (i == user.length()-1)
+            cout << " = ";
+        else 
+            cout << " + ";
     }
 
     cout << total << endl;

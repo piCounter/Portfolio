@@ -30,6 +30,7 @@ public class Hw7p2 {
         int[] temp = merge(list1, list2);
         for (int i = 0; i < temp.length; i++) 
             System.out.printf("%d ", temp[i]);
+        System.out.println();
 
         input.close();
     }
@@ -43,6 +44,4 @@ public class Hw7p2 {
         Arrays.sort(list);
         return list;
     }
-
-    
 }
