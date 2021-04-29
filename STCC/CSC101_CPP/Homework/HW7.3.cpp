@@ -57,4 +57,6 @@ int main() {
     cout << "Total votes: " << setw(width) << totalVotes << endl;
     
     winner(candidatesNames, votesRecieved, arraySize);
+
+    return 0;
 }
