@@ -1,11 +1,2 @@
-string fname = "Jazmin";
-    // string name = fname + " Jones";
-    // string str1 = "Computer Science";
-    // string str2 = "C++ Programming.";
-    // string str3 = "Calculus 1";
-    // string str4 = fname + " is taking " + str3 + " and " + str2;
-    // string str5 = "klfhjdshfklshdfklshdfkl";
-    // cout << str4 << endl;
-    // str5.clear();
-    // int len = str5.length();
-    // cout << len << endl;
+
+void largestValueRow(int [7][6]);
