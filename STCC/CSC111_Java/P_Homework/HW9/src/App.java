@@ -15,7 +15,7 @@ public class App {
         part1();
 
         // Homework 9 part 2
-        // part2();
+        part2();
 
     }
 
@@ -29,10 +29,13 @@ public class App {
         double width, height;
 
         // get number of rectangles from user as count
-        while (count < 0) {
+        while (count < 1) {
             System.out.print("How many rectangles will you be entering? ");
             count = input.nextInt();
             input.nextLine();
+            if (count < 1) {
+                System.out.println("Please enter a count greater than 0 to proceed");
+            }
         }
 
         // create class object array
