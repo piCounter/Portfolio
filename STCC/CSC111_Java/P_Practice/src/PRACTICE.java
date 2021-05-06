@@ -9,7 +9,35 @@ public class PRACTICE {
         
     Scanner input = new Scanner(System.in);
 
-    for (int a = 0; a < 5; ++a)
-    System.out.print(a + " ");
+
+
+
+
+
+    	
+   
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    input.close();
     }
 }

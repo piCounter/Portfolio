@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 using namespace std;
 
 // declare a structure for the records
@@ -31,6 +32,7 @@ int main() {
 
     // get data about a person
     for (int i=0; i<size; i++) {
+        if (!(i==0)) cin.ignore();
         cout << "Enter the following data about person # " << i+1 << ": " << endl;
 
         cout << "\tName: ";
@@ -57,13 +59,12 @@ int main() {
     ofstream people;
     people.open("oopEmployees.txt");
     for (int i=0; i<size; i++) {
-        people << "Employee # " << (i+1) << endl;
-        people << Employees[i].name;
-        people << Employees[i].age;
-        people << Employees[i].street;
-        people << Employees[i].city;
-        people << Employees[i].phone;
-        people << Employees[i].salary;
+        people << Employees[i].name << endl;
+        people << Employees[i].age << endl;
+        people << Employees[i].street << endl;
+        people << Employees[i].city << endl;
+        people << Employees[i].phone << endl;
+        people << Employees[i].salary << endl;
     }
 
     // read from a file
@@ -80,7 +81,14 @@ int main() {
 
 
     // use data
-    cout << endl << "" << Employees[0].name << endl << endl;
+    for (int i=0; i< size; i++) {
+        cout << setw(20) << left << Employees[i].name << endl;
+        cout << "\t" << setw(4) << right << Employees[i].age << endl;
+        cout << "\t" << setw(50) << right << Employees[i].street << endl;
+        cout << "\t" << setw(25) << right << Employees[i].city << endl;
+        cout << "\t" << setw(11) << right << Employees[i].phone << endl;
+        cout << "\t" << setw(10) << right << Employees[i].salary << endl;
+    }
 
     return 0;
 }
