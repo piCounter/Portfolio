@@ -4,7 +4,7 @@
  * Intro to classes - employee class
  */
 
-public class Student {
+public class Student1 {
     // define objects variables
     String name;
     int age;

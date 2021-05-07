@@ -46,9 +46,9 @@ public class App {
     // using methods from class
     private static void chapter9video2() {
         // create objects
-        Student st1 = new Student();
-        Student st2 = new Student();
-        Student st3 = new Student();
+        Student1 st1 = new Student1();
+        Student1 st2 = new Student1();
+        Student1 st3 = new Student1();
 
         // initialize objects using a method
         st1.setStudent("Michael Buckley", 29, 'M', 1219, false);
@@ -103,7 +103,7 @@ public class App {
         }
     }
 
-    // post lecture review with SI
+    // post lecture review with SI - classes
     private static void p_reviewClasses() {
         
         Car[] carArray = new Car[5];
@@ -127,4 +127,20 @@ public class App {
 
         System.out.println("Make     Model     Year     Mileage");
     }
+
+    // post lecture review with SI - inheritance
+    private static void p_reviewInheritance() {
+
+        Person mike = new Person("Mike");
+        Student michael = new Student();
+
+        System.out.println("\n", + mike);
+        System.out.println("\n", + michael);
+
+
+    }
+
+
+
+
 }
