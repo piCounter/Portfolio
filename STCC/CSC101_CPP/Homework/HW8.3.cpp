@@ -112,9 +112,9 @@ void printPlayersData() {
             printPlayerHeader();
             printPlayer(index);
         }
-        else {
-            cout << "player name did not match" << endl;
-        }
+    //     else {
+    //         cout << "player name did not match" << endl;
+    //     }
     }
 }
 

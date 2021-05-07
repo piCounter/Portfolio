@@ -52,6 +52,7 @@ void getData() {
 void printCheck(int selections[], int size) {
     // local variable
     double sum = 0;
+    double tax = 0;
 
     // calculate sum of all items in order array
     for (int i=0; i<size; i++) {
@@ -59,7 +60,8 @@ void printCheck(int selections[], int size) {
     }
 
     // add 5% tax
-    sum *= 1.05;
+    tax = sum * .05;
+    sum += tax;
 
     // output
     cout << endl << endl << "Please come again.\n" << "____________________________" << endl;
@@ -67,6 +69,11 @@ void printCheck(int selections[], int size) {
         cout << setw(20) << setfill('.') << left << menuList[selections[i]-1].name;
         cout << " $" << setw(6) << setfill(' ') << right << menuList[selections[i]-1].price << endl;
     }
+    // tax
+    cout << "____________________________" << endl;
+    cout << setw(20) << left << "Tax:";
+    cout << " $" << setw(6) << right << tax << endl;
+    // amount due
     cout << "____________________________" << endl;
     cout << setw(20) << left << "Amount Due:";
     cout << " $" << setw(6) << right << sum << endl;
@@ -80,7 +87,7 @@ void showMenu() {
 
     // print menu
     cout << fixed << showpoint << setprecision(2);
-    cout << "Welcome to Buckley's Breakfast" << endl;
+    cout << "\nWelcome to Buckley's Breakfast" << endl;
     cout << "____________________________" << endl;
     for (int i=0; i<8; i++) {
         cout << i+1 << ") " << setw(20) << setfill('.') << left << menuList[i].name;
@@ -138,4 +145,6 @@ int main() {
     showMenu();
 
     cout << endl;
+
+    return 0;
 }

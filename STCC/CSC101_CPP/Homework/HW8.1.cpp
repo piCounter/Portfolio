@@ -5,6 +5,7 @@
 */
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -25,13 +26,13 @@ int main() {
 
     // user input
     cout << "Enter the name of the manufacturer: ";
-    cin >> cpu1.manufacturer;
+    getline(cin, cpu1.manufacturer, '\n');
 
     cout << "Enter the model of the computer: ";
-    cin >> cpu1.modelType;
+    getline(cin, cpu1.modelType, '\n');
 
     cout << "Enter processor type: ";
-    cin >> cpu1.processorType;
+    getline(cin, cpu1.processorType, '\n');
 
     cout << "Enter the size of RAM (in GB): ";
     cin >> cpu1.ram;
@@ -47,13 +48,13 @@ int main() {
     cout << endl;
 
     // output
-    cout << "Manufacturer: " << cpu1.manufacturer << endl;
+    cout << "\nManufacturer: " << cpu1.manufacturer << endl;
     cout << "modelType: " << cpu1.modelType << endl;
     cout << "processorType: " << cpu1.processorType << endl;
     cout << "ram: " << cpu1.ram << endl;
     cout << "hardDriveSize: " << cpu1.hardDriveSize << endl;
     cout << "yearBuilt: " << cpu1.yearBuilt << endl;
-    cout << "price: $" << cpu1.price << endl;
+    cout << fixed << showpoint << setprecision(2) << "price: $" << cpu1.price << endl;
 
     return 0;
 }
