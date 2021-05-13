@@ -63,16 +63,12 @@ Test::Test(string n, double s) {
 
 int main() {
 
-    // Test adt("Soup");
+    Test adt("Soup");
 
     // cout << adt.getName() << endl;
     // cout << adt.getSize() << endl;
 
-    // adt.showName();
-
-    string change = "49";
-    int converted = stoi(change);
-    cout << "stoi() = " << converted << endl;
+    adt.showName();
     
 
 }
