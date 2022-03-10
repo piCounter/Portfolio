@@ -1,0 +1,18 @@
+tryhackme.com/room/beginnerpathintro
+
+Learning Cyber Security
+
+Task 1 - Web Application Security
+    Click green "View Site" button
+    enter "Ben.Spring"
+        Click submit
+    enter "THM{BRUTEFORCING}"
+        Click submit
+
+Task 2 - Network Security
+    Click green "View Site" button
+    enter "300 million"
+        Click submit
+    
+Task 3 - Learning Roadmap
+    Click "Completed"
