@@ -1,0 +1,39 @@
+Level 0:
+	proxychians ssh bandit0@bandit.labs.overthewire.org -p 2220
+	cat readme
+	Level 1 password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+ 
+Level 1:
+	proxychains ssh bandit1@bandit.labs.overthewire.org -p 2220
+	cat ./-
+	Level 2 password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+ 
+Level 2:
+	proxychains ssh bandit2@bandit.labs.overthewire.org -p 2220
+	cat "spaces in this filename"
+	Level 3 password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+ 
+Level 3:
+	proxychains ssh bandit3@bandit.labs.overthewire.org -p 2220
+	cd inhere/
+	ls -a
+	cat ./.hidden
+	Level 4 password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+ 
+Level 4:
+	proxychains ssh bandit4@bandit.labs.overthewire.org -p 2220
+	cd inhere/
+	ls inhere
+	cat ./-file07
+	Level 5 password: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+ 
+Level 5:
+	proxychains ssh bandit5@bandit.labs.overthewire.org -p 2220
+	ls -alRS
+	find -L ./ -depth -type f -size 1033c ! -executable
+		# find all files in lower directories that are size 1033 bytes and not executable
+	cat ./maybehere07/.file2
+	Level 6 password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+ 
+Level 6:
+	proxychains ssh bandit6@bandit.labs.overthewire.org -p 2220
