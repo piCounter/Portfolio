@@ -1,0 +1,34 @@
+tryhackme.com/room/whatisnetworking
+
+What is Networking?
+
+Task 1 - What is Networking?
+    enter "network"
+        Click submit
+    
+Task 2 - What is the Internet?
+    enter "Tim Berners-Lee"
+        Click submit
+
+Task 3 - Identifying Devices on a Network
+    enter "internet protocol"
+        Click submit
+    enter "octet"
+        Click submit
+    enter "4"
+        Click submit
+    enter "media access control"
+        Click submit
+    enter "THM{YOU_GOT_ON_TRYHACKME}"
+        Click submit
+    
+Task 4 - Ping (ICMP)
+    enter "icmp"
+        Click submit
+    enter "ping 10.10.10.10"
+        Click submit
+    enter "THM{I_PINGED_THE_SERVER}"
+        Click submit
+    
+Task 5 - Continue Your Learning: Intro to LAN
+    ignore task, click "Completed"
