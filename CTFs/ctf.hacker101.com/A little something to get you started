@@ -1,0 +1,11 @@
+^FLAG^87c4e49eac113a0068df5cae6828264811c8dbd32d4e8a963a3ba189a2658fc0$FLAG$
+
+step 1
+  view page html
+step 2
+  notice background image
+step 3
+  open background image as html page
+step 4
+  https://9f2e867a5687551bf0fef22a14a0ae3c.ctf.hacker101.com/background.png
+    ^FLAG^87c4e49eac113a0068df5cae6828264811c8dbd32d4e8a963a3ba189a2658fc0$FLAG$
