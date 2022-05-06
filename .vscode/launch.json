@@ -1,0 +1,260 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch PRACTICE",
+            "request": "launch",
+            "mainClass": "PRACTICE",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hw5p1",
+            "request": "launch",
+            "mainClass": "Hw5p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hw5p2",
+            "request": "launch",
+            "mainClass": "Hw5p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review4_formatting",
+            "request": "launch",
+            "mainClass": "Review4_formatting",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review4",
+            "request": "launch",
+            "mainClass": "Review4",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom7p1",
+            "request": "launch",
+            "mainClass": "Zoom7p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review3_format",
+            "request": "launch",
+            "mainClass": "Review3_format",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review3",
+            "request": "launch",
+            "mainClass": "Review3",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hw4p2",
+            "request": "launch",
+            "mainClass": "Hw4p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch incompleteHomework4p2",
+            "request": "launch",
+            "mainClass": "incompleteHomework4p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom6p1",
+            "request": "launch",
+            "mainClass": "Zoom6p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework4p2",
+            "request": "launch",
+            "mainClass": "Homework4p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework4p1",
+            "request": "launch",
+            "mainClass": "Homework4p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review2",
+            "request": "launch",
+            "mainClass": "Review2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch video3",
+            "request": "launch",
+            "mainClass": "video3",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom2p1",
+            "request": "launch",
+            "mainClass": "Zoom2p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework1",
+            "request": "launch",
+            "mainClass": "Homework1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom5p3",
+            "request": "launch",
+            "mainClass": "Zoom5p3",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom5p2",
+            "request": "launch",
+            "mainClass": "Zoom5p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom5p1",
+            "request": "launch",
+            "mainClass": "Zoom5p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework3p2",
+            "request": "launch",
+            "mainClass": "Homework3p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework3p1",
+            "request": "launch",
+            "mainClass": "Homework3p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom4p1",
+            "request": "launch",
+            "mainClass": "Zoom4p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework2p2",
+            "request": "launch",
+            "mainClass": "Homework2p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Homework2p1",
+            "request": "launch",
+            "mainClass": "Homework2p1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom3p2",
+            "request": "launch",
+            "mainClass": "Zoom3p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom3",
+            "request": "launch",
+            "mainClass": "Zoom3",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Review1",
+            "request": "launch",
+            "mainClass": "Review1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom2p2",
+            "request": "launch",
+            "mainClass": "Zoom2p2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom2_1",
+            "request": "launch",
+            "mainClass": "Zoom2_1",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom2_2",
+            "request": "launch",
+            "mainClass": "Zoom2_2",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Welcome",
+            "request": "launch",
+            "mainClass": "Welcome",
+            "projectName": "CSC111"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zoom2",
+            "request": "launch",
+            "mainClass": "Zoom2",
+            "projectName": "CSC111"
+        },
+        {
+            "name": "g++ - Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "externalTerminal",
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

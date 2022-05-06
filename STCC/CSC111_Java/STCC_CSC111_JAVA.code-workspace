@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"STCC_CSC111_JAVA.code-workspace": true
+		}
+	}
+}
