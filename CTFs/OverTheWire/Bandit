@@ -1,3 +1,7 @@
+###############################################################################################################################################################
+# This is a no fluff step by step level walk-though of how I completed each level. In the future, I may go back and do a more complete write-up of each level #
+###############################################################################################################################################################
+
 Level 0:
 	proxychains ssh bandit0@bandit.labs.overthewire.org -p 2220
 	ls
