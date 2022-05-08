@@ -138,5 +138,6 @@ Level 12:
 	
 Level 13:
 	proxychains ssh bandit13@bandit.labs.overthewire.org -p 2220
-
-	Level 14 password: 
+	ssh -i sshkey.private bandit14@localhost
+	cat /etc/bandit_pass/bandit14
+	Level 14 password: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
