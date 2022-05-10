@@ -141,3 +141,128 @@ Level 13:
 	ssh -i sshkey.private bandit14@localhost
 	cat /etc/bandit_pass/bandit14
 	Level 14 password: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+Level 14:
+	proxychains ssh bandit14@bandit.labs.overthewire.org -p 2220
+	telnet localhost 30000
+		Trying 127.0.0.1...
+		Connected to localhost.
+		Escape character is '^]'.
+	4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+		Correct!
+		BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+		Connection closed by foreign host.
+	Level 15 password: BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+Level 15:
+	proxychains ssh bandit15@bandit.labs.overthewire.org -p 2220
+	openssl s_client -host localhost -port 30001
+		CONNECTED(00000003)
+		depth=0 CN = localhost
+		...
+		Verify return code: 18 (self signed certificate)
+    		Extended master secret: yes
+		---
+	BfMYroe26WYalil77FoDi9qh59eK5xNr
+		Correct!
+		cluFn7wTiGryunymYOu4RcffSxQluehd
+		
+		closed
+	Level 16 password: cluFn7wTiGryunymYOu4RcffSxQluehd
+	
+Level 16:
+	proxychains ssh bandit16@bandit.labs.overthewire.org -p 2220
+	nmap -p31000-32000 localhost
+	openssl s_client -host localhost -port 31046
+	openssl s_client -host localhost -port 31518 # ssl enabled
+	openssl s_client -host localhost -port 31691
+	openssl s_client -host localhost -port 31790 # ssl enabled
+	openssl s_client -host localhost -port 31960
+	openssl s_client -host localhost -port 31790 > /tmp/pi16/key
+		cluFn7wTiGryunymYOu4RcffSxQluehd
+	tail -n 29 sslkey > keytail # remove unneeded ssl information from top of sslkey file
+	head -n 27 keytail > privatekey # remove last 2 unneeded lines from raw ssl file
+	chmod 600 privatekey
+	Level 17 password: # no password, only private key from last level
+	
+Level 17:
+	ssh -i key bandit17@localhost
+	diff passwords.old passwords.new
+		42c42
+		< w0Yfolrc5bwjS4qw5mq1nnQi6mF03bii # old password
+		---
+		> kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd # new password
+	Level 18 password: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+Level 18:
+	ssh -t bandit18@localhost /bin/sh
+	ls
+	cat readme
+	Level 19 password: IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+Level 19:
+	ssh bandit19@bandit.labs.overthewire.org -p 2220
+	./bandit20-do cat /etc/bandit_pass/bandit20
+	Level 20 password: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+Level 20:
+	ssh bandit20@bandit.labs.overthewire.org -p 2220
+	nmap localhost
+	tmux
+	# in tmux window1
+		echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l -p 54321
+	# split tmux to create new terminal in session
+		Ctrl+b %
+	# in tmux window2
+		./suconnect 54321
+	# in tmux window1
+		gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+	Level 21 password: gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr 
+	
+Level 21:
+	ssh bandit21@bandit.labs.overthewire.org -p 2220
+	cd /etc/cron.d
+	cat *
+	cd /usr/bin
+	cat cronjob_bandit??.sh
+		#!/bin/bash
+		chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+		cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+		cat: cronjob_bandit23.sh: Permission denied
+		cat: cronjob_bandit24.sh: Permission denied
+	cd /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+		-bash: cd: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Not a directory 
+	cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+		Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+	Level 22 password: Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+Level 22:
+	ssh bandit22@bandit.labs.overthewire.org -p 2220
+	cd /etc/cron.d
+	cat cronjob_bandit??
+	cd /usr/bin
+	cat cronjob_bandit??.sh
+		#!/bin/bash # previous level
+		chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv # previous level
+		cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv # previous level
+		#!/bin/bash
+
+		myname=$(whoami)
+		mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+		echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+		cat /etc/bandit_pass/$myname > /tmp/$mytarget
+	echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+		8ca319486bfbbc3663ea0fbe81326349
+	cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+		jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+	Level 23 password: jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+Level 23:
+	ssh bandit23@bandit.labs.overthewire.org -p 2220
+	
+	Level 24 password: 
+	
+	
