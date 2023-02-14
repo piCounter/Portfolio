@@ -6,19 +6,19 @@ Level 0:
 	proxychains ssh bandit0@bandit.labs.overthewire.org -p 2220
 	ls
 	cat readme
-	Level 1 password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+	Level 1 password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
  
 Level 1:
 	proxychains ssh bandit1@bandit.labs.overthewire.org -p 2220
 	ls
 	cat ./-
-	Level 2 password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+	Level 2 password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
  
 Level 2:
 	proxychains ssh bandit2@bandit.labs.overthewire.org -p 2220
 	ls
 	cat "spaces in this filename"
-	Level 3 password: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+	Level 3 password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
  
 Level 3:
 	proxychains ssh bandit3@bandit.labs.overthewire.org -p 2220
@@ -26,7 +26,7 @@ Level 3:
 	cd inhere/
 	ls -a
 	cat .hidden
-	Level 4 password: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+	Level 4 password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
  
 Level 4:
 	proxychains ssh bandit4@bandit.labs.overthewire.org -p 2220
@@ -36,7 +36,7 @@ Level 4:
 	file ./-*
 		# get file type of all files in directory
 	cat ./-file07
-	Level 5 password: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+	Level 5 password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
  
 Level 5:
 	proxychains ssh bandit5@bandit.labs.overthewire.org -p 2220
@@ -45,45 +45,45 @@ Level 5:
 	find -L ./ -depth -type f -size 1033c ! -executable
 		# find all files in lower directories that are size 1033 bytes and not executable
 	cat ./maybehere07/.file2
-	Level 6 password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+	Level 6 password: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
  
 Level 6:
 	proxychains ssh bandit6@bandit.labs.overthewire.org -p 2220
 	cd /
 	find -depth -size 33c -user bandit7 -group bandit6 2> /dev/null
 	cat ./var/lib/dpkg/info/bandit7.password
-	Level 7 password: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+	Level 7 password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
 Level 7:
 	proxychains ssh bandit7@bandit.labs.overthewire.org -p 2220
 	ls
 	grep -n "millionth" data.txt
-		37262:millionth	cvX2JJa4CFALtqS87jk27qwqGhBM9plV
-	Level 8 password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+		37262:millionth	TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+	Level 8 password: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 	
 Level 8:
 	proxychains ssh bandit8@bandit.labs.overthewire.org -p 2220
 	ls
 	sort data.txt | uniq -u
-	Level 9 password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+	Level 9 password: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 	
 Level 9:
 	proxychains ssh bandit9@bandit.labs.overthewire.org -p 2220
 	ls
 	grep -a "===" data.txt
-	Level 10 password: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+	Level 10 password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 	
 Level 10:
 	proxychains ssh bandit10@bandit.labs.overthewire.org -p 2220
 	base64 -d data.txt | cat
-	Level 11 password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+	Level 11 password: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 	
 Level 11:
 	proxychains ssh bandit11@bandit.labs.overthewire.org -p 2220
 	ls
 	cat data.txt | tr '[a-zA-Z]' '[n-za-mN-ZA-M]'
-		The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
-	Level 12 password: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+		The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+	Level 12 password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 Level 12:
 	proxychains ssh bandit12@bandit.labs.overthewire.org -p 2220
@@ -133,14 +133,14 @@ Level 12:
 	ls
 		data4.tar  data5.tar  data7.tar  data9  data.txt
 	cat data9
-		The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
-	Level 13 password: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+		The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+	Level 13 password: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 	
 Level 13:
 	proxychains ssh bandit13@bandit.labs.overthewire.org -p 2220
 	ssh -i sshkey.private bandit14@localhost
 	cat /etc/bandit_pass/bandit14
-	Level 14 password: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+	Level 14 password: fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 
 Level 14:
 	proxychains ssh bandit14@bandit.labs.overthewire.org -p 2220
@@ -148,9 +148,9 @@ Level 14:
 		Trying 127.0.0.1...
 		Connected to localhost.
 		Escape character is '^]'.
-	4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+	fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 		Correct!
-		BfMYroe26WYalil77FoDi9qh59eK5xNr
+		jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 
 		Connection closed by foreign host.
 	Level 15 password: BfMYroe26WYalil77FoDi9qh59eK5xNr
@@ -164,12 +164,12 @@ Level 15:
 		Verify return code: 18 (self signed certificate)
     		Extended master secret: yes
 		---
-	BfMYroe26WYalil77FoDi9qh59eK5xNr
+	jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 		Correct!
-		cluFn7wTiGryunymYOu4RcffSxQluehd
+		JQttfApK4SeyHwDlI9SXGR50qclOAil1
 		
 		closed
-	Level 16 password: cluFn7wTiGryunymYOu4RcffSxQluehd
+	Level 16 password: JQttfApK4SeyHwDlI9SXGR50qclOAil1
 	
 Level 16:
 	proxychains ssh bandit16@bandit.labs.overthewire.org -p 2220
@@ -190,35 +190,35 @@ Level 17:
 	ssh -i key bandit17@localhost
 	diff passwords.old passwords.new
 		42c42
-		< w0Yfolrc5bwjS4qw5mq1nnQi6mF03bii # old password
+		< 810zq8IK64u5A9Lb2ibdTGBtlcSZsoe8 # old password
 		---
-		> kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd # new password
+		> hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg # new password
 	Level 18 password: kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
 
 Level 18:
 	ssh -t bandit18@localhost /bin/sh
 	ls
 	cat readme
-	Level 19 password: IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+	Level 19 password: awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 
 Level 19:
 	ssh bandit19@bandit.labs.overthewire.org -p 2220
 	./bandit20-do cat /etc/bandit_pass/bandit20
-	Level 20 password: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+	Level 20 password: VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
 Level 20:
 	ssh bandit20@bandit.labs.overthewire.org -p 2220
 	nmap localhost
 	tmux
 	# in tmux window1
-		echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l -p 54321
+		echo "VxCazJaVykI6W36BkBU0mJTCM8rR95XT" | nc -l -p 54321
 	# split tmux to create new terminal in session
 		Ctrl+b %
 	# in tmux window2
 		./suconnect 54321
 	# in tmux window1
-		gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
-	Level 21 password: gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr 
+		NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+	Level 21 password: NvEJF7oVjkddltPSrdKEFOllh9V1IBcq 
 	
 Level 21:
 	ssh bandit21@bandit.labs.overthewire.org -p 2220
@@ -231,11 +231,13 @@ Level 21:
 		cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 		cat: cronjob_bandit23.sh: Permission denied
 		cat: cronjob_bandit24.sh: Permission denied
-	cd /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+	cd $(cat cronjob_bandit??.sh 2> /dev/null | grep chmod | cut -d ' ' -f 3)
 		-bash: cd: /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: Not a directory 
+	file /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+		/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv: ASCII text
 	cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
-		Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
-	Level 22 password: Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+		WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+	Level 22 password: WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
 
 Level 22:
 	ssh bandit22@bandit.labs.overthewire.org -p 2220
@@ -257,22 +259,41 @@ Level 22:
 	echo I am user bandit23 | md5sum | cut -d ' ' -f 1
 		8ca319486bfbbc3663ea0fbe81326349
 	cat /tmp/8ca319486bfbbc3663ea0fbe81326349
-		jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
-	Level 23 password: jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+		QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+	Level 23 password: QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
 
 Level 23:
 	ssh bandit23@bandit.labs.overthewire.org -p 2220
 	cat /etc/cron.d/*
-        cat /use/bin/cronjob_bandit24.sh
-        mkdir /tmp/pi23 && cd /tmp/pi23
-        vi discovery.sh
-                #! /bin/bash
-                cat /etc/bandit_pass/bandit24 > /tmp/pi23/password
-        touch password
-        chmod 777 discovery.sh password
-        cp discovery.sh /var/spool/bandit24
-        # wait about 60 seconds
-        cat password
-	Level 24 password: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+	cat /use/bin/cronjob_bandit24.sh
+	cd $(mktemp -d)
+	vim discovery.sh
+		#! /bin/bash
+		cat /etc/bandit_pass/bandit24 > /tmp/pi23/password
+	chmod +x . discovery.sh # need to allow bandit24 to create file in bandit23 /tmp/dir and execute .sh file
+	cp discovery.sh /var/spool/bandit24/foo
+	# wait about 60 seconds
+	watch -n .1 password
+	Level 24 password: VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
 	
 	
+Level 24:
+	ssh bandit24@bandit.labs.overthewire.org -p 2220
+	nc localhost 30002
+		VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar 0000
+		Wrong! Please enter the correct pincode. Try again.
+	cd $(mktemp -d)
+	vim bruteforce.sh
+		#! /bin/bash
+		#bruteforce all possible numbers
+		for i in {0000..9999}
+		do
+			echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i" >> guesses.txt
+		done
+	sh bruteforce.sh
+	cat guesses.txt | nc localhost 30002 > results.txt && cat results.txt
+		...
+		Wrong! Please enter the correct pincode. Try again.
+		Correct!
+		The password of user bandit25 is p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d
+	Level 25 password: p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d
